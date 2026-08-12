@@ -31,8 +31,8 @@
       </div>
       <div class="hidden md:flex gap-8 items-center text-sm font-medium text-slate-300">
         <a href="#features" class="hover:text-indigo-400 transition">Tính năng</a>
-        <a href="#preview" class="hover:text-indigo-400 transition">Giao diện lệnh</a>
         <a href="#why-us" class="hover:text-indigo-400 transition">Tại sao chọn chúng tôi?</a>
+        <a href="#preview" class="hover:text-indigo-400 transition">Hệ lệnh</a>
         <a href="#faq" class="hover:text-indigo-400 transition">Hỏi Đáp</a>
       </div>
       <a href="https://discord.com" target="_blank" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm px-5 py-2.5 rounded-xl shadow-lg shadow-indigo-600/20 hover:shadow-indigo-600/40 transition">
@@ -51,94 +51,26 @@
       Tối ưu hóa máy chủ Discord với Elric — bộ công cụ bảo mật chuyên nghiệp, minigames giải trí và hệ thống kinh tế cộng đồng sống động 24/7.
     </p>
 
-    <div class="flex flex-col sm:flex-row justify-center gap-4 mt-10">
-      <a href="https://discord.com" target="_blank" class="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold px-8 py-4 rounded-xl shadow-xl shadow-indigo-600/25 transition transform hover:-translate-y-0.5">
-        Thêm Vào Discord Ngay
+    <!-- Nút Bấm Xịn Cao Cấp Đã Nâng Cấp -->
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-5 mt-10">
+      <!-- Nút Primary (Mời Bot) có Glow Effect -->
+      <a href="https://discord.com" target="_blank" class="group relative inline-flex items-center justify-center w-full sm:w-auto">
+        <div class="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl blur-md opacity-60 group-hover:opacity-100 transition duration-300 group-hover:scale-105"></div>
+        <div class="relative flex items-center justify-center gap-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold text-base px-8 py-4 rounded-xl shadow-2xl transition duration-200 w-full sm:w-auto">
+          <svg class="w-6 h-6 fill-current transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24">
+            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028z"/>
+          </svg>
+          <span>Thêm Vào Discord Ngay</span>
+        </div>
       </a>
-      <a href="#contact" class="bg-slate-900 hover:bg-slate-800 text-slate-200 font-semibold px-8 py-4 rounded-xl border border-slate-800 transition">
-        Tham Gia Community
+
+      <!-- Nút Secondary (Community) -->
+      <a href="https://discord.gg" target="_blank" class="group relative inline-flex items-center justify-center w-full sm:w-auto">
+        <div class="flex items-center justify-center gap-2 bg-slate-900/90 hover:bg-slate-800 text-slate-200 hover:text-white font-semibold text-base px-8 py-4 rounded-xl border border-slate-700/80 hover:border-slate-500 shadow-lg transition duration-200 w-full sm:w-auto">
+          <span class="transition-transform duration-300 group-hover:scale-110">🌐</span>
+          <span>Tham Gia Community</span>
+        </div>
       </a>
-    </div>
-  </section>
-
-  <!-- Giao Diện Thao Tác Hệ Lệnh Thực Tế (Discord Interactive Preview) -->
-  <section id="preview" class="py-16 max-w-4xl mx-auto px-6 border-t border-slate-800/50">
-    <div class="text-center mb-10">
-      <h2 class="text-2xl md:text-3xl font-extrabold text-white tracking-widest uppercase">GIAO DIỆN THAO TÁC HỆ LỆNH THỰC TẾ</h2>
-      <p class="text-slate-400 mt-2 text-sm tracking-wide">TRẢI NGHIỆM TRỰC QUAN CÁC CÂU LỆNH NÚT BẤM VÀ EMBED CỦA ELRIC TRÊN DISCORD</p>
-    </div>
-
-    <!-- Khung Chat Mô Phỏng Discord -->
-    <div class="bg-[#2f3136] rounded-2xl border border-slate-800 shadow-2xl overflow-hidden text-left font-sans">
-      <!-- Discord Window Header -->
-      <div class="bg-[#202225] px-4 py-3 flex items-center justify-between border-b border-[#2f3136]">
-        <div class="flex items-center gap-2">
-          <span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span>
-          <span class="w-3 h-3 rounded-full bg-yellow-500 inline-block"></span>
-          <span class="w-3 h-3 rounded-full bg-green-500 inline-block"></span>
-          <span class="text-xs text-slate-400 font-medium ml-2"># 💬-game-elric</span>
-        </div>
-        <span class="text-xs text-slate-500 bg-[#2f3136] px-2 py-1 rounded">Discord App View</span>
-      </div>
-
-      <!-- Discord Chat Content -->
-      <div class="p-6 space-y-6 bg-[#36393f]">
-        <!-- Message 1: User Lệnh -->
-        <div class="flex items-start gap-4">
-          <div class="w-10 h-10 rounded-full bg-slate-600 flex items-center justify-center font-bold text-white text-sm">
-            U
-          </div>
-          <div class="flex-1">
-            <div class="flex items-center gap-2">
-              <span class="font-semibold text-white text-sm">Thành Viên</span>
-              <span class="text-[10px] text-slate-400">Hôm nay lúc 12:00</span>
-            </div>
-            <div class="mt-1 bg-[#2f3136] inline-block px-3 py-1 rounded-md text-xs text-indigo-300 font-mono">
-              /uno start
-            </div>
-          </div>
-        </div>
-
-        <!-- Message 2: Elric Bot Trả Lời Embed -->
-        <div class="flex items-start gap-4">
-          <div class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center font-bold text-white text-sm shadow">
-            E
-          </div>
-          <div class="flex-1">
-            <div class="flex items-center gap-2">
-              <span class="font-semibold text-indigo-400 text-sm">Elric</span>
-              <span class="bg-[#5865f2] text-[9px] text-white px-1.5 py-0.5 rounded font-bold">BOT</span>
-              <span class="text-[10px] text-slate-400">Hôm nay lúc 12:00</span>
-            </div>
-            
-            <!-- Embed Card -->
-            <div class="mt-2 bg-[#2f3136] border-l-4 border-indigo-500 rounded-r-lg p-4 max-w-lg shadow-md">
-              <div class="font-bold text-white text-base flex items-center gap-2">
-                🎮 Bàn Đấu UNO Đã Khởi Tạo!
-              </div>
-              <p class="text-xs text-slate-300 mt-2 leading-relaxed">
-                Chủ phòng đã tạo phòng chơi UNO nút bấm. Nhấn vào nút bên dưới để tham gia hoặc bắt đầu ván đấu!
-              </p>
-              <div class="mt-3 text-xs text-slate-400 bg-[#202225] p-2 rounded border border-slate-700/50">
-                👥 Người chơi trong phòng: <span class="text-white font-medium">4/10</span>
-              </div>
-            </div>
-
-            <!-- Discord Interactive Buttons -->
-            <div class="mt-3 flex flex-wrap gap-2">
-              <button class="bg-[#5865f2] hover:bg-[#4752c4] text-white text-xs font-semibold px-4 py-2 rounded transition flex items-center gap-1.5 shadow">
-                <span>🎮 Tham Gia</span>
-              </button>
-              <button class="bg-[#3ba55d] hover:bg-[#2d7d46] text-white text-xs font-semibold px-4 py-2 rounded transition flex items-center gap-1.5 shadow">
-                <span>🚀 Bắt Đầu Game</span>
-              </button>
-              <button class="bg-[#ed4245] hover:bg-[#c03537] text-white text-xs font-semibold px-4 py-2 rounded transition flex items-center gap-1.5 shadow">
-                <span>🚪 Rời Phòng</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -170,7 +102,7 @@
     </div>
   </section>
 
-  <!-- Features Section (Khóa overflow-hidden giữ icon gọn gàng bên trong card) -->
+  <!-- Features Section -->
   <section id="features" class="py-16 max-w-6xl mx-auto px-6 border-t border-slate-800/50">
     <div class="text-center mb-12">
       <h2 class="text-2xl md:text-3xl font-extrabold text-white tracking-widest uppercase">TÍNH NĂNG NỔI BẬT</h2>
@@ -178,46 +110,115 @@
     </div>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Card 1 -->
       <div class="group relative overflow-hidden bg-slate-900/60 border border-slate-800 p-6 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 hover:border-indigo-500 hover:shadow-xl hover:shadow-indigo-500/20">
         <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-2xl mb-4 transition-transform duration-300 group-hover:scale-110">🎮</div>
         <h3 class="font-bold text-lg text-white mb-1 transition-colors duration-300 group-hover:text-indigo-400">Hệ Thống Minigames</h3>
         <p class="text-slate-400 text-sm leading-relaxed">Kho game tương tác vận hành hoàn toàn bằng Nút Bấm hiện đại: UNO, Bài Cào 3 Lá, Xì Dách, Nối Từ Tiếng Việt và Hệ thống Boom Kiss.</p>
       </div>
 
-      <!-- Card 2 -->
       <div class="group relative overflow-hidden bg-slate-900/60 border border-slate-800 p-6 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 hover:border-indigo-500 hover:shadow-xl hover:shadow-indigo-500/20">
         <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-2xl mb-4 transition-transform duration-300 group-hover:scale-110">🛡️</div>
         <h3 class="font-bold text-lg text-white mb-1 transition-colors duration-300 group-hover:text-indigo-400">Lá Chắn Anti Cao Cấp</h3>
         <p class="text-slate-400 text-sm leading-relaxed">Quét tự động chặn các liên kết độc hại độc quyền (Anti Link), lọc tin nhắn rác cực nhanh (Anti Spam) và bảo vệ kênh chống phá (Anti Nuke).</p>
       </div>
 
-      <!-- Card 3 -->
       <div class="group relative overflow-hidden bg-slate-900/60 border border-slate-800 p-6 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 hover:border-indigo-500 hover:shadow-xl hover:shadow-indigo-500/20">
         <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-2xl mb-4 transition-transform duration-300 group-hover:scale-110">💰</div>
         <h3 class="font-bold text-lg text-white mb-1 transition-colors duration-300 group-hover:text-indigo-400">Hệ Thống Kinh Tế (Economy)</h3>
         <p class="text-slate-400 text-sm leading-relaxed">Mô phỏng thị trường tiền tệ ảo sống động, cho phép nhận lương, làm việc, chuyển tiền và mua sắm vật phẩm độc lạ trong Server.</p>
       </div>
 
-      <!-- Card 4 -->
       <div class="group relative overflow-hidden bg-slate-900/60 border border-slate-800 p-6 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 hover:border-indigo-500 hover:shadow-xl hover:shadow-indigo-500/20">
         <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-2xl mb-4 transition-transform duration-300 group-hover:scale-110">⚙️</div>
         <h3 class="font-bold text-lg text-white mb-1 transition-colors duration-300 group-hover:text-indigo-400">Quản Trị Chuyên Sâu</h3>
         <p class="text-slate-400 text-sm leading-relaxed">Bộ lệnh quản trị member mạnh mẽ, hỗ trợ setup nhanh kênh log, phân quyền tự động, thống kê hoạt động server một cách chuẩn xác.</p>
       </div>
 
-      <!-- Card 5 -->
       <div class="group relative overflow-hidden bg-slate-900/60 border border-slate-800 p-6 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 hover:border-indigo-500 hover:shadow-xl hover:shadow-indigo-500/20">
         <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-2xl mb-4 transition-transform duration-300 group-hover:scale-110">👑</div>
         <h3 class="font-bold text-lg text-white mb-1 transition-colors duration-300 group-hover:text-indigo-400">Hệ Thống Danh Hiệu</h3>
         <p class="text-slate-400 text-sm leading-relaxed">Tự động tính toán điểm tương tác (XP), tăng cấp độ thành viên, trao tặng các role danh hiệu vinh danh cực kỳ trực quan.</p>
       </div>
 
-      <!-- Card 6 -->
       <div class="group relative overflow-hidden bg-slate-900/60 border border-slate-800 p-6 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 hover:border-indigo-500 hover:shadow-xl hover:shadow-indigo-500/20">
         <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-2xl mb-4 transition-transform duration-300 group-hover:scale-110">🎫</div>
         <h3 class="font-bold text-lg text-white mb-1 transition-colors duration-300 group-hover:text-indigo-400">Hệ Thống Support Ticket</h3>
         <p class="text-slate-400 text-sm leading-relaxed">Tạo kênh hỗ trợ riêng tư tự động cho từng thành viên gửi yêu cầu trợ giúp một cách nhanh chóng và chuyên nghiệp.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Giao Diện Thao Tác Hệ Lệnh Thực Tế -->
+  <section id="preview" class="py-16 max-w-4xl mx-auto px-6 border-t border-slate-800/50">
+    <div class="text-center mb-10">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-white tracking-widest uppercase">GIAO DIỆN THAO TÁC HỆ LỆNH THỰC TẾ</h2>
+      <p class="text-slate-400 mt-2 text-sm tracking-wide">TRẢI NGHIỆM TRỰC QUAN CÁC CÂU LỆNH NÚT BẤM VÀ EMBED CỦA ELRIC TRÊN DISCORD</p>
+    </div>
+
+    <!-- Khung Chat Mô Phỏng Discord -->
+    <div class="bg-[#2f3136] rounded-2xl border border-slate-800 shadow-2xl overflow-hidden text-left font-sans">
+      <div class="bg-[#202225] px-4 py-3 flex items-center justify-between border-b border-[#2f3136]">
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span>
+          <span class="w-3 h-3 rounded-full bg-yellow-500 inline-block"></span>
+          <span class="w-3 h-3 rounded-full bg-green-500 inline-block"></span>
+          <span class="text-xs text-slate-400 font-medium ml-2"># 💬-game-elric</span>
+        </div>
+        <span class="text-xs text-slate-500 bg-[#2f3136] px-2 py-1 rounded">Discord App View</span>
+      </div>
+
+      <div class="p-6 space-y-6 bg-[#36393f]">
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-full bg-slate-600 flex items-center justify-center font-bold text-white text-sm">
+            U
+          </div>
+          <div class="flex-1">
+            <div class="flex items-center gap-2">
+              <span class="font-semibold text-white text-sm">Thành Viên</span>
+              <span class="text-[10px] text-slate-400">Hôm nay lúc 12:00</span>
+            </div>
+            <div class="mt-1 bg-[#2f3136] inline-block px-3 py-1 rounded-md text-xs text-indigo-300 font-mono">
+              /uno start
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center font-bold text-white text-sm shadow">
+            E
+          </div>
+          <div class="flex-1">
+            <div class="flex items-center gap-2">
+              <span class="font-semibold text-indigo-400 text-sm">Elric</span>
+              <span class="bg-[#5865f2] text-[9px] text-white px-1.5 py-0.5 rounded font-bold">BOT</span>
+              <span class="text-[10px] text-slate-400">Hôm nay lúc 12:00</span>
+            </div>
+            
+            <div class="mt-2 bg-[#2f3136] border-l-4 border-indigo-500 rounded-r-lg p-4 max-w-lg shadow-md">
+              <div class="font-bold text-white text-base flex items-center gap-2">
+                🎮 Bàn Đấu UNO Đã Khởi Tạo!
+              </div>
+              <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+                Chủ phòng đã tạo phòng chơi UNO nút bấm. Nhấn vào nút bên dưới để tham gia hoặc bắt đầu ván đấu!
+              </p>
+              <div class="mt-3 text-xs text-slate-400 bg-[#202225] p-2 rounded border border-slate-700/50">
+                👥 Người chơi trong phòng: <span class="text-white font-medium">4/10</span>
+              </div>
+            </div>
+
+            <div class="mt-3 flex flex-wrap gap-2">
+              <button class="bg-[#5865f2] hover:bg-[#4752c4] text-white text-xs font-semibold px-4 py-2 rounded transition flex items-center gap-1.5 shadow">
+                <span>🎮 Tham Gia</span>
+              </button>
+              <button class="bg-[#3ba55d] hover:bg-[#2d7d46] text-white text-xs font-semibold px-4 py-2 rounded transition flex items-center gap-1.5 shadow">
+                <span>🚀 Bắt Đầu Game</span>
+              </button>
+              <button class="bg-[#ed4245] hover:bg-[#c03537] text-white text-xs font-semibold px-4 py-2 rounded transition flex items-center gap-1.5 shadow">
+                <span>🚪 Rời Phòng</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -236,7 +237,7 @@
           <span class="transition group-open:-rotate-180 text-indigo-400">▼</span>
         </summary>
         <p class="mt-4 text-slate-400 text-sm leading-relaxed">
-          Bạn chỉ cần bấm vào nút "Mời Elric" hoặc "Thêm Vào Discord Ngay" trên website này, chọn server bạn có quyền Quản trị (Administrator) và cấp quyền cho bot là xong!
+          Bạn chỉ cần bấm vào nút "Thêm Vào Discord Ngay" ở đầu trang, chọn server bạn có quyền Quản trị (Administrator) và cấp quyền cho bot là xong!
         </p>
       </details>
 
@@ -252,37 +253,18 @@
 
       <details class="group bg-slate-900/60 border border-slate-800 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer transition">
         <summary class="flex items-center justify-between font-bold text-lg text-white group-hover:text-indigo-400">
-          <span>Tôi cần hỗ trợ kỹ thuật thì liên hệ qua đâu?</span>
+          <span>Tôi cần hỗ trợ kỹ thuật thì làm thế nào?</span>
           <span class="transition group-open:-rotate-180 text-indigo-400">▼</span>
         </summary>
         <p class="mt-4 text-slate-400 text-sm leading-relaxed">
-          Bạn có thể tham gia vào Server Discord Hỗ Trợ chính thức hoặc gửi email trực tiếp cho chúng tôi qua phần "Liên Hệ & Hỗ Trợ" bên dưới.
+          Bạn có thể bấm vào nút "Tham Gia Community" ở đầu trang để vào Server Discord Hỗ Trợ chính thức và nhận sự trợ giúp trực tiếp từ đội ngũ phát triển.
         </p>
       </details>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-16 max-w-4xl mx-auto px-6 border-t border-slate-800/50">
-    <div class="bg-gradient-to-r from-indigo-950/40 to-slate-900 border border-indigo-500/20 p-8 md:p-12 rounded-3xl text-center">
-      <h2 class="text-2xl md:text-3xl font-extrabold text-white tracking-widest uppercase">LIÊN HỆ & HỖ TRỢ</h2>
-      <p class="text-slate-400 mt-2 text-sm max-w-xl mx-auto">
-        Cần trợ giúp thiết lập hoặc đóng góp ý kiến phát triển cho Elric? Hãy kết nối với chúng tôi qua các kênh bên dưới.
-      </p>
-
-      <div class="flex flex-wrap justify-center gap-4 mt-8">
-        <a href="https://discord.gg" target="_blank" class="bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-6 py-3 rounded-xl transition flex items-center gap-2 text-sm">
-          <span>💬 Server Discord Hỗ Trợ</span>
-        </a>
-        <a href="mailto:support@elric.bot" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium px-6 py-3 rounded-xl border border-slate-700 transition flex items-center gap-2 text-sm">
-          <span>✉️ Email Liên Hệ</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
   <!-- Footer -->
-  <footer class="border-t border-slate-800/60 py-8 text-center text-slate-500 text-xs">
+  <footer class="border-t border-slate-800/60 py-10 text-center text-slate-500 text-xs">
     <p>© 2026 Elric Bot. All rights reserved.</p>
   </footer>
 
