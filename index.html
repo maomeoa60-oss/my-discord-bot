@@ -10,7 +10,10 @@
     body { font-family: 'Plus Jakarta Sans', sans-serif; }
   </style>
 </head>
-<body class="bg-[#0b0f17] text-slate-100 min-h-screen selection:bg-indigo-500 selection:text-white">
+<body class="bg-[#0b0f17] text-slate-100 min-h-screen selection:bg-indigo-500 selection:text-white relative">
+
+  <!-- Thanh Tiến Độ Cuộn Trang (Progress Bar) -->
+  <div id="progress-bar" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 z-[100] transition-all duration-150 w-0"></div>
 
   <!-- Glow Background Effect -->
   <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-gradient-to-tr from-indigo-600/20 to-purple-600/20 blur-[120px] pointer-events-none -z-10 rounded-full"></div>
@@ -28,7 +31,8 @@
       </div>
       <div class="hidden md:flex gap-8 items-center text-sm font-medium text-slate-300">
         <a href="#features" class="hover:text-indigo-400 transition">Tính năng</a>
-        <a href="#why-us" class="hover:text-indigo-400 transition">Tại sao chọn Elric?</a>
+        <a href="#why-us" class="hover:text-indigo-400 transition">Tại sao chọn chúng tôi?</a>
+        <a href="#faq" class="hover:text-indigo-400 transition">Hỏi Đáp</a>
         <a href="#contact" class="hover:text-indigo-400 transition">Liên hệ</a>
       </div>
       <a href="https://discord.com" target="_blank" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm px-5 py-2.5 rounded-xl shadow-lg shadow-indigo-600/20 hover:shadow-indigo-600/40 transition">
@@ -38,16 +42,7 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="text-center pt-20 pb-16 px-4 max-w-4xl mx-auto">
-    <!-- Frame Chữ Nổi Bật Ở Đầu Web -->
-    <div class="inline-flex items-center gap-2 bg-indigo-950/60 border border-indigo-500/30 px-4 py-2 rounded-full text-indigo-300 text-xs md:text-sm font-semibold mb-6 shadow-inner">
-      <span class="flex h-2 w-2 relative">
-        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
-        <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
-      </span>
-      <span>🚀 Phiên bản Elric v2.5 chính thức ra mắt</span>
-    </div>
-
+  <section class="text-center pt-24 pb-16 px-4 max-w-4xl mx-auto">
     <h1 class="text-4xl md:text-6xl font-black leading-tight tracking-tight bg-gradient-to-b from-white via-slate-100 to-slate-400 bg-clip-text text-transparent">
       Giải Pháp Quản Lý & Giải Trí Đa Năng Cho Máy Chủ
     </h1>
@@ -66,27 +61,27 @@
     </div>
   </section>
 
-  <!-- Why Choose Elric? Section -->
+  <!-- Why Choose Us? Section -->
   <section id="why-us" class="py-16 max-w-6xl mx-auto px-6 border-t border-slate-800/50">
     <div class="text-center mb-12">
-      <h2 class="text-2xl md:text-3xl font-extrabold text-white">Tại Sao Lại Chọn Elric?</h2>
-      <p class="text-slate-400 mt-2 text-sm">Điểm vượt trội giúp máy chủ của bạn hoạt động hiệu quả hơn</p>
+      <h2 class="text-2xl md:text-3xl font-extrabold text-white tracking-widest uppercase">TẠI SAO LẠI CHỌN CHÚNG TÔI?</h2>
+      <p class="text-slate-400 mt-2 text-sm tracking-wide">ĐIỂM VƯỢT TRỘI GIÚP MÁY CHỦ CỦA BẠN HOẠT ĐỘNG HIỆU QUẢ HƠN</p>
     </div>
 
     <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-slate-900/40 border border-slate-800 p-6 rounded-2xl">
+      <div class="bg-slate-900/40 border border-slate-800 p-6 rounded-2xl transition-all duration-300 hover:scale-105 hover:border-indigo-500/50 hover:shadow-lg hover:shadow-indigo-500/10">
         <div class="w-12 h-12 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 font-bold text-xl flex items-center justify-center mb-4">⚡</div>
         <h3 class="font-bold text-lg text-white mb-2">Tốc Độ Phản Hồi Cực Nhanh</h3>
         <p class="text-slate-400 text-sm leading-relaxed">Hệ thống tối ưu thuật toán giúp Elric xử lý và phản hồi lệnh tương tác nút bấm trong chưa đầy 1 giây.</p>
       </div>
 
-      <div class="bg-slate-900/40 border border-slate-800 p-6 rounded-2xl">
+      <div class="bg-slate-900/40 border border-slate-800 p-6 rounded-2xl transition-all duration-300 hover:scale-105 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/10">
         <div class="w-12 h-12 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-400 font-bold text-xl flex items-center justify-center mb-4">🛡️</div>
         <h3 class="font-bold text-lg text-white mb-2">Bảo Vệ Server Toàn Diện</h3>
         <p class="text-slate-400 text-sm leading-relaxed">Tích hợp bộ lọc Anti chuyên sâu chặn link độc hại, spam và bảo vệ server khỏi phá hoại.</p>
       </div>
 
-      <div class="bg-slate-900/40 border border-slate-800 p-6 rounded-2xl">
+      <div class="bg-slate-900/40 border border-slate-800 p-6 rounded-2xl transition-all duration-300 hover:scale-105 hover:border-indigo-500/50 hover:shadow-lg hover:shadow-indigo-500/10">
         <div class="w-12 h-12 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 font-bold text-xl flex items-center justify-center mb-4">⚙️</div>
         <h3 class="font-bold text-lg text-white mb-2">Dễ Dàng Quản Trị</h3>
         <p class="text-slate-400 text-sm leading-relaxed">Hệ thống câu lệnh Slash Command hiện đại, setup kênh log và phân quyền hoàn toàn tự động.</p>
@@ -94,58 +89,104 @@
     </div>
   </section>
 
-  <!-- Features Section -->
+  <!-- Features Section (Hiệu ứng Hover Phóng To & Đổi Màu) -->
   <section id="features" class="py-16 max-w-6xl mx-auto px-6 border-t border-slate-800/50">
     <div class="text-center mb-12">
-      <h2 class="text-2xl md:text-3xl font-extrabold text-white">Tính Năng Nổi Bật</h2>
-      <p class="text-slate-400 mt-2 text-sm">Bộ công cụ hoàn chỉnh dành riêng cho máy chủ của bạn</p>
+      <h2 class="text-2xl md:text-3xl font-extrabold text-white tracking-widest uppercase">TÍNH NĂNG NỔI BẬT</h2>
+      <p class="text-slate-400 mt-2 text-sm tracking-wide">BỘ CÔNG CỤ HOÀN CHỈNH DÀNH RIÊNG CHO MÁY CHỦ CỦA BẠN</p>
     </div>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl hover:border-indigo-500/40 transition">
-        <div class="text-3xl mb-3">🎮</div>
-        <h3 class="font-bold text-lg text-white mb-1">Hệ Thống Minigames</h3>
+      <!-- Card 1 -->
+      <div class="group bg-slate-900/60 border border-slate-800 p-6 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:border-indigo-500 hover:shadow-xl hover:shadow-indigo-500/20">
+        <div class="text-3xl mb-3 transition-transform duration-300 group-hover:scale-125">🎮</div>
+        <h3 class="font-bold text-lg text-white mb-1 transition-colors duration-300 group-hover:text-indigo-400">Hệ Thống Minigames</h3>
         <p class="text-slate-400 text-sm">Kho game tương tác vận hành hoàn toàn bằng Nút Bấm hiện đại: UNO, Bài Cào 3 Lá, Xì Dách, Nối Từ Tiếng Việt và Hệ thống Boom Kiss.</p>
       </div>
 
-      <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl hover:border-indigo-500/40 transition">
-        <div class="text-3xl mb-3">🛡️</div>
-        <h3 class="font-bold text-lg text-white mb-1">Lá Chắn Anti Cao Cấp</h3>
+      <!-- Card 2 -->
+      <div class="group bg-slate-900/60 border border-slate-800 p-6 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:border-indigo-500 hover:shadow-xl hover:shadow-indigo-500/20">
+        <div class="text-3xl mb-3 transition-transform duration-300 group-hover:scale-125">🛡️</div>
+        <h3 class="font-bold text-lg text-white mb-1 transition-colors duration-300 group-hover:text-indigo-400">Lá Chắn Anti Cao Cấp</h3>
         <p class="text-slate-400 text-sm">Quét tự động chặn các liên kết độc hại độc quyền (Anti Link), lọc tin nhắn rác cực nhanh (Anti Spam) và bảo vệ kênh chống phá (Anti Nuke).</p>
       </div>
 
-      <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl hover:border-indigo-500/40 transition">
-        <div class="text-3xl mb-3">💰</div>
-        <h3 class="font-bold text-lg text-white mb-1">Hệ Thống Kinh Tế (Economy)</h3>
+      <!-- Card 3 -->
+      <div class="group bg-slate-900/60 border border-slate-800 p-6 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:border-indigo-500 hover:shadow-xl hover:shadow-indigo-500/20">
+        <div class="text-3xl mb-3 transition-transform duration-300 group-hover:scale-125">💰</div>
+        <h3 class="font-bold text-lg text-white mb-1 transition-colors duration-300 group-hover:text-indigo-400">Hệ Thống Kinh Tế (Economy)</h3>
         <p class="text-slate-400 text-sm">Mô phỏng thị trường tiền tệ ảo sống động, cho phép nhận lương, làm việc, chuyển tiền và mua sắm vật phẩm độc lạ trong Server.</p>
       </div>
 
-      <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl hover:border-indigo-500/40 transition">
-        <div class="text-3xl mb-3">⚙️</div>
-        <h3 class="font-bold text-lg text-white mb-1">Quản Trị Chuyên Sâu</h3>
+      <!-- Card 4 -->
+      <div class="group bg-slate-900/60 border border-slate-800 p-6 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:border-indigo-500 hover:shadow-xl hover:shadow-indigo-500/20">
+        <div class="text-3xl mb-3 transition-transform duration-300 group-hover:scale-125">⚙️</div>
+        <h3 class="font-bold text-lg text-white mb-1 transition-colors duration-300 group-hover:text-indigo-400">Quản Trị Chuyên Sâu</h3>
         <p class="text-slate-400 text-sm">Bộ lệnh quản trị member mạnh mẽ, hỗ trợ setup nhanh kênh log, phân quyền tự động, thống kê hoạt động server một cách chuẩn xác.</p>
       </div>
 
-      <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl hover:border-indigo-500/40 transition">
-        <div class="text-3xl mb-3">👑</div>
-        <h3 class="font-bold text-lg text-white mb-1">Hệ Thống Danh Hiệu</h3>
+      <!-- Card 5 -->
+      <div class="group bg-slate-900/60 border border-slate-800 p-6 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:border-indigo-500 hover:shadow-xl hover:shadow-indigo-500/20">
+        <div class="text-3xl mb-3 transition-transform duration-300 group-hover:scale-125">👑</div>
+        <h3 class="font-bold text-lg text-white mb-1 transition-colors duration-300 group-hover:text-indigo-400">Hệ Thống Danh Hiệu</h3>
         <p class="text-slate-400 text-sm">Tự động tính toán điểm tương tác (XP), tăng cấp độ thành viên, trao tặng các role danh hiệu vinh danh cực kỳ trực quan.</p>
       </div>
 
-      <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl hover:border-indigo-500/40 transition">
-        <div class="text-3xl mb-3">🎫</div>
-        <h3 class="font-bold text-lg text-white mb-1">Hệ Thống Support Ticket</h3>
+      <!-- Card 6 -->
+      <div class="group bg-slate-900/60 border border-slate-800 p-6 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:border-indigo-500 hover:shadow-xl hover:shadow-indigo-500/20">
+        <div class="text-3xl mb-3 transition-transform duration-300 group-hover:scale-125">🎫</div>
+        <h3 class="font-bold text-lg text-white mb-1 transition-colors duration-300 group-hover:text-indigo-400">Hệ Thống Support Ticket</h3>
         <p class="text-slate-400 text-sm">Tạo kênh hỗ trợ riêng tư tự động cho từng thành viên gửi yêu cầu trợ giúp một cách nhanh chóng và chuyên nghiệp.</p>
       </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section (Hỏi Đáp) -->
+  <section id="faq" class="py-16 max-w-4xl mx-auto px-6 border-t border-slate-800/50">
+    <div class="text-center mb-12">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-white tracking-widest uppercase">CÂU HỎI THƯỜNG GẶP</h2>
+      <p class="text-slate-400 mt-2 text-sm tracking-wide">MỌI THẮC MẮC PHỔ BIẾN VỀ BOT SẼ ĐƯỢC GIẢI ĐÁP TẠI ĐÂY</p>
+    </div>
+
+    <div class="space-y-4">
+      <details class="group bg-slate-900/60 border border-slate-800 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer transition">
+        <summary class="flex items-center justify-between font-bold text-lg text-white group-hover:text-indigo-400">
+          <span>Làm sao để thêm Elric vào server Discord của tôi?</span>
+          <span class="transition group-open:-rotate-180 text-indigo-400">▼</span>
+        </summary>
+        <p class="mt-4 text-slate-400 text-sm leading-relaxed">
+          Bạn chỉ cần bấm vào nút "Mời Elric" hoặc "Thêm Vào Discord Ngay" trên website này, chọn server bạn có quyền Quản trị (Administrator) và cấp quyền cho bot là xong!
+        </p>
+      </details>
+
+      <details class="group bg-slate-900/60 border border-slate-800 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer transition">
+        <summary class="flex items-center justify-between font-bold text-lg text-white group-hover:text-indigo-400">
+          <span>Elric có hoàn toàn miễn phí không?</span>
+          <span class="transition group-open:-rotate-180 text-indigo-400">▼</span>
+        </summary>
+        <p class="mt-4 text-slate-400 text-sm leading-relaxed">
+          Đúng vậy! Tất cả các tính năng cơ bản bao gồm Minigames nút bấm, Lá chắn Anti, Kinh tế Economy và Hệ thống Quản trị đều hoàn toàn miễn phí 100%.
+        </p>
+      </details>
+
+      <details class="group bg-slate-900/60 border border-slate-800 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer transition">
+        <summary class="flex items-center justify-between font-bold text-lg text-white group-hover:text-indigo-400">
+          <span>Tôi cần hỗ trợ kỹ thuật thì liên hệ qua đâu?</span>
+          <span class="transition group-open:-rotate-180 text-indigo-400">▼</span>
+        </summary>
+        <p class="mt-4 text-slate-400 text-sm leading-relaxed">
+          Bạn có thể tham gia vào Server Discord Hỗ Trợ chính thức hoặc gửi email trực tiếp cho chúng tôi qua phần "Liên Hệ & Hỗ Trợ" bên dưới.
+        </p>
+      </details>
     </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="py-16 max-w-4xl mx-auto px-6 border-t border-slate-800/50">
     <div class="bg-gradient-to-r from-indigo-950/40 to-slate-900 border border-indigo-500/20 p-8 md:p-12 rounded-3xl text-center">
-      <h2 class="text-2xl md:text-3xl font-extrabold text-white">Liên Hệ & Hỗ Trợ</h2>
+      <h2 class="text-2xl md:text-3xl font-extrabold text-white tracking-widest uppercase">LIÊN HỆ & HỖ TRỢ</h2>
       <p class="text-slate-400 mt-2 text-sm max-w-xl mx-auto">
-        Cần trợ giúp thiết lập hoặc đóng góp ý kiến phát triển cho Elric? Hãy kết nối với chúng tao qua các kênh bên dưới.
+        Cần trợ giúp thiết lập hoặc đóng góp ý kiến phát triển cho Elric? Hãy kết nối với chúng tôi qua các kênh bên dưới.
       </p>
 
       <div class="flex flex-wrap justify-center gap-4 mt-8">
@@ -163,6 +204,16 @@
   <footer class="border-t border-slate-800/60 py-8 text-center text-slate-500 text-xs">
     <p>© 2026 Elric Bot. All rights reserved.</p>
   </footer>
+
+  <!-- Script Thanh Tiến Độ (Reading Progress Bar) -->
+  <script>
+    window.onscroll = function() {
+      let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      let scrolled = (winScroll / height) * 100;
+      document.getElementById("progress-bar").style.width = scrolled + "%";
+    };
+  </script>
 
 </body>
 </html>
